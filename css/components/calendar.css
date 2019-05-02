@@ -1,0 +1,123 @@
+
+.calendar {
+  width: 580px;
+  margin: 0 100px;
+  border: solid 4px rgb(230,230,230);
+  box-shadow: 1px 1px;
+  padding: 0 48px;
+}
+
+.calendar ul {
+  list-style-type: none;
+}
+
+.month {
+  padding: 50px 25px;
+  width: 95%%;
+  background: white;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+  z-index: 5;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+  z-index: 5;
+
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: white;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+  align-content: : center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: white;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:16px;
+  font-weight: bold;
+  color: #777;
+}
+
+.days li .active {
+  padding: 20px;
+  background: #1abc9c;
+  color: white !important
+}
+
+.days li span {
+  display: block;
+  border-radius: 50%;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.days li.next {
+  opacity: 0.5;
+}
+
+.days li.prev {
+  opacity: 0.5;
+}
+
+#unrounded {
+  border-radius: 0px;
+  width: 55%;
+}
+
+#left-rounded {
+  width: 55%;
+  border-radius: 50% 0px 0px 50%;
+}
+
+#right-rounded {
+  width: 55%;
+  border-radius: 0 50% 50% 0;
+}
+
+#selected {
+  background: purple;
+}
